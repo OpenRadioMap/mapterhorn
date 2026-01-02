@@ -3,6 +3,7 @@
 default:
     uv run python source_download.py usgs3dep13
     uv run python source_to_cog.py usgs3dep13
+    uv run python source_set_crs.py usgs3dep13 EPSG:2163
     uv run python source_bounds.py usgs3dep13
     uv run python source_polygonize.py usgs3dep13 32
     uv run python source_create_tarball.py usgs3dep13
